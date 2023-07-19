@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    /*para retirar a borda da caixa select (option)*/
+
+
+}
+
+body {
+    background-color: #8a51fc;
+
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+
+
+
+}
+
+
+main {
+
+    width: 375px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+    /* 1)cima 2)lados 3)baixo*/
+
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+select,
+input
+
+/* Adicionado o input junto ao select apenas separado por vírgula, pois as configurações eram as mesmas*/
+    {
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    width: 100%;
+    /* Com o width em 100% ele se ajusta ao tamanho do height*/
+    height: 48px;
+    margin-bottom: 24px;
+    /* Margin abaixo da caixa select*/
+    appearance: none;
+    /* Para tirar a setinha -> na caixa select quando for buscar a seleção*/
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+
+}
+
+button {
+    background: #772FD3;
+    border-radius: 5px;
+    height: 48px;
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    border: none;
+    /*sem borda*/
+
+}
+
+button:hover {
+    /*quando o mouse passar por cima ele altera a cor*/
+    opacity: 0.8;
+
+}
+
+button:active {
+    /*quando ele for clicado ele é aumentado, fica com a cor mais clara*/
+    opacity: 0.6;
+
+}
+
+section {
+
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+
+    display: flex;
+    /*coloca todos os itens lado a lado, podendo ser alterado colocando um por cima do outro*/
+    flex-direction: column;
+    /*coloca os itens em coluna*/
+    align-items: center;
+    /*alinha os itens*/
+
+}
+
+.arrow-img {
+    margin: 15px 0;
+
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    /*distância os itens em um mesmo padrão*/
+
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+
+}
+
+.currency-value,
+.currency-value-to-convert {
+    color: #555555;
+    font-size: 20px;
+    font-weight: 700;
+
+}
